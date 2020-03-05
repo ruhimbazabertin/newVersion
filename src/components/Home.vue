@@ -1,9 +1,7 @@
 <template>
 <b-container>
   <b-row align-v="center">
-  <app-card> </app-card>
-  <app-card> </app-card>
-  <app-card> </app-card>
+  <app-card v-for="job in jobs" :key="job.id" :name="job.name"> </app-card>
   </b-row>
 </b-container>
 </template>
@@ -14,6 +12,11 @@ export default {
   components: {
     "app-card": JobCard
   },
+  data(){
+    return{
+     jobs: []
+    }
+  },
   mounted(){
    this.fetchData();
   },
@@ -21,7 +24,7 @@ export default {
    async fetchData(){ 
      const res = await fetch("jobs.json");
      const val = res.json();
-     console.log(val);
+     this.jobs = val;
     }
   }
 }
