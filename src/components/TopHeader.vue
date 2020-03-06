@@ -1,5 +1,13 @@
 <template>
   <div class="top-header">
+  			<div class="md-4">
+				<ul id="top-header-menu" class="top-nav clearfix">
+          <span class="top-text"> Our free courses are downloaded over 3 MILLION times. Get them now!
+          </span>
+				<li><a href="#">Call Us On:</a></li>
+				<li><a href="#">Beautifying</a></li>
+				</ul>
+			</div>
        <b-navbar toggleable="lg" type="dark" variant="info">
     <b-navbar-brand href="#">ABNB-RWANDA</b-navbar-brand>
 
@@ -44,5 +52,38 @@ export default {
 }
 .top-header{
     margin-top: -60px;
+    background-color: #77cc6d;
+}
+
+.top-bar ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+#top-header-menu li {
+    display: inline;
+    padding: 10px;
+    color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.top-bar {
+    background: red;
+    line-height: 40px;
+    height: 40px;
+
+}
+.to-right{
+  flex: left;;
+  color: white;
+}
+.top-text{
+  color: white;
+  font-size: 15px;
+  margin-left: -100px;;
 }
 </style>
