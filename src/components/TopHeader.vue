@@ -1,11 +1,10 @@
 <template>
   <div class="top-header">
   			<div class="md-4">
-				<ul id="top-header-menu" class="top-nav clearfix">
-          <span class="top-text"> Our free courses are downloaded over 3 MILLION times. Get them now!
+				<ul id="top-header-menu" class="top-nav clearfix d-flex justify-content-between align-items-center m-0 p-0">
+          <span class="top-text ml-3"> Our free courses are downloaded over 3 MILLION times. Get them now!
           </span>
-				<li><a href="#">Call Us On:</a></li>
-				<li><a href="#">Beautifying</a></li>
+				<li class="ml-auto"><a href="#">Call Us On: 07888</a><a href="#" class="pl-5 mr-4">Beautifying</a></li>
 				</ul>
 			</div>
        <b-navbar toggleable="lg" type="dark" variant="info">

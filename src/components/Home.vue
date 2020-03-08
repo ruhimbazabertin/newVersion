@@ -7,6 +7,7 @@
 </template>
 <script>
 import JobCard from '../components/JobCard'
+import res from '../../public/jobs.json'
 export default {
   name: 'home',
   components: {
@@ -14,21 +15,20 @@ export default {
   },
   data(){
     return{
-     jobs: []
+     jobs: res
     }
   },
   mounted(){
-   this.fetchData();
+  //  this.fetchData();
+   console.log(this.jobs)
   },
   methods: {
-   async fetchData(){ 
-     const res = await fetch("jobs.json");
-     const val = res.json();
-     this.jobs = val;
+     fetchData(){ 
+       
     }
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 </style>
