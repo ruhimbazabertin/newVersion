@@ -17,6 +17,7 @@
       </b-card-text>
       <b-button variant="primary">Apply</b-button>
     </b-card>
+    
 
     </b-col>
     </div>    
