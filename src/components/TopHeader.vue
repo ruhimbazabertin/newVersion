@@ -4,7 +4,18 @@
 				<ul id="top-header-menu" class="top-nav clearfix d-flex justify-content-between align-items-center m-0 p-0">
           <span class="top-text ml-3"> Our free courses are downloaded over 3 MILLION times. Get them now!
           </span>
-				<li class="ml-auto"><a href="#">Call Us On: 07888</a><a href="#" class="pl-5 mr-4">Beautifying</a></li>
+				<li class="ml-auto"><a href="#">Call Us On: 07888</a><a href="#" class="pl-5 mr-4">Beautifying
+          <facebook :url="url" scale="3"></facebook>
+    <twitter :url="url" title="Check me on Github" scale="3"></twitter>
+    <linkedin :url="url" scale="3"></linkedin>
+    <telegram :url="url" scale="3"></telegram>
+    <whats-app :url="url" title="Hello" scale="3"></whats-app>
+    <pinterest :url="url" scale="3"></pinterest>
+    <reddit :url="url" scale="3" title="My Github"></reddit>
+    <google :url="url" scale="3"></google>
+    <email :url="url" subject="Hello" scale="3"></email>
+  
+          </a></li>
 				</ul>
 			</div>
        <b-navbar toggleable="lg" type="dark" variant="info">
@@ -20,14 +31,14 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
        <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item to="/cart">My Cart</b-nav-item>
+        <b-nav-item to="/cart"><i class="fa fa-shopping-cart"></i> My Cart</b-nav-item>
 
         <b-nav-item-dropdown right>
           <template v-slot:button-content>
-            <span>Account</span>
+            <span><i class="fa fa-user-circle"></i> cSign In</span>
           </template>
-          <b-dropdown-item href="#">Sign In</b-dropdown-item>
-          <b-dropdown-item href="#">Sign UP</b-dropdown-item>
+          <b-dropdown-item to="/signin"><i class="fa fa-user-circle"></i>Sign In</b-dropdown-item>
+                    <b-dropdown-item href="#">Continue With:</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
@@ -37,7 +48,7 @@
 
 <script>
 export default {
-
+props:['url']
 }
 </script>
 
