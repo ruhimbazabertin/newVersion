@@ -31,11 +31,11 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
        <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item to="/cart"><i class="fa fa-shopping-cart"></i> My Cart</b-nav-item>
+        <b-nav-item to="/myCart"><i class="fa fa-shopping-cart"></i> My Cart</b-nav-item>
 
         <b-nav-item-dropdown right>
           <template v-slot:button-content>
-            <span><i class="fa fa-user-circle"></i> cSign In</span>
+            <span><i class="fa fa-user-circle"></i> Sign In</span>
           </template>
           <b-dropdown-item to="/signin"><i class="fa fa-user-circle"></i>Sign In</b-dropdown-item>
                     <b-dropdown-item href="#">Continue With:</b-dropdown-item>
@@ -47,8 +47,11 @@
 </template>
 
 <script>
+import MyCart from '../components/MyCart'
 export default {
-props:['url']
+components: {
+  "app-cart": MyCart
+}
 }
 </script>
 
