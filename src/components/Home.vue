@@ -12,26 +12,26 @@
   <b-row>
     <app-subscribe></app-subscribe>
   </b-row>
-  <b-row>
-    <app-signin></app-signin>
-  </b-row>
+ <!-- <b-row>
+    <app-checkout></app-checkout>
+  </b-row>-->
 </div>
 </template>
 <script>
+import CheckoutNewVersion from '../components/CheckoutNewVersion'
 import JobCard from '../components/JobCard'
 import Crousel from '../components/Crousel'
 import Search from '../components/Search'
 import Subscribe from '../components/Subscribe'
-import SignIn from '../components/SignIn'
 import res from '../../public/jobs.json'
 export default {
   name: 'home',
   components: {
+    "app-checkout": CheckoutNewVersion,
     "app-crousel": Crousel,
     "app-card": JobCard,
     "app-search": Search,
     "app-subscribe": Subscribe,
-    "app-signin": SignIn
   },
   data(){
     return{
