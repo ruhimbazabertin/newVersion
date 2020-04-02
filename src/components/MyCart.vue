@@ -50,7 +50,7 @@
                 <td class="hidden-xs text-center"><strong>Total </strong>
                 </td>
                 <td>
-                    <router-link to="/checkout" class="btn btn-success btn-block">
+                    <router-link to="/Checkout" class="btn btn-success btn-block">
                         Checkout
                         <i class="fa fa-angle-right"></i>
                     </router-link>
@@ -62,11 +62,7 @@
 
 </template>
 <script>
-import Checkout from '../components/Checkout'
 export default {
-    components:{
-        "app-checkout": Checkout
-    }
     
 }
 </script>>

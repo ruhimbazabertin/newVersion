@@ -4,6 +4,9 @@ import Home from '@/components/Home'
 import Checkout from '../components/Checkout'
 import MyCart from '../components/MyCart'
 import SignIn from '../components/SignIn'
+import Registration from '../components/Registration'
+import JobCardDetail from '../components/JobCardDetail'
+import Dashboard from '../Board/Dashboard'
 
 Vue.use(Router)
 
@@ -20,6 +23,16 @@ export default new Router({
     },
     {
       path: '/signin', component:  SignIn
+    },
+    {
+      path: '/registration', component: Registration
+    },
+    {
+      path: '/jobCardDetail', component: JobCardDetail
+    },
+    {
+      path: '/Dashboard', component: Dashboard
     }
+    
   ]
 })
