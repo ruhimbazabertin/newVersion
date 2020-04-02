@@ -4,7 +4,7 @@
       <div class="container">
         <div class="block-heading">
           <h2>Payment</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+          <p><strong>Terms and condition for payment:</strong> <small>you need to pay using paypal, Mobile Money or Tigo Cash.</small></p>
         </div>
                 <form>
           <div class="products">
@@ -12,12 +12,12 @@
             <div class="item">
               <span class="price">$200</span>
               <p class="item-name">Product 1</p>
-              <p class="item-description">Lorem ipsum dolor sit amet</p>
+              <p class="item-description">Item Description</p>
             </div>
             <div class="item">
               <span class="price">$120</span>
               <p class="item-name">Product 2</p>
-              <p class="item-description">Lorem ipsum dolor sit amet</p>
+              <p class="item-description">Item Description</p>
             </div>
             <div class="total">Total<span class="price">$320</span></div>
           </div>
@@ -45,7 +45,7 @@
                 <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
               </div>
               <div class="form-group col-sm-12">
-                <button type="button" class="btn btn-primary btn-block">Proceed</button>
+                <router-link class="btn btn-primary btn-block" to="/">Proceed</router-link>
               </div>
             </div>
           </div>

@@ -9,16 +9,14 @@
   <b-row align-v="center">
   <app-card v-for="job in jobs" :key="job.id" :name="job.name"> </app-card>
   </b-row>
+  <br/><br/>
   <b-row>
     <app-subscribe></app-subscribe>
   </b-row>
- <!-- <b-row>
-    <app-checkout></app-checkout>
-  </b-row>-->
+  <br/><br/>
 </div>
 </template>
 <script>
-import CheckoutNewVersion from '../components/CheckoutNewVersion'
 import JobCard from '../components/JobCard'
 import Crousel from '../components/Crousel'
 import Search from '../components/Search'
@@ -27,7 +25,6 @@ import res from '../../public/jobs.json'
 export default {
   name: 'home',
   components: {
-    "app-checkout": CheckoutNewVersion,
     "app-crousel": Crousel,
     "app-card": JobCard,
     "app-search": Search,
