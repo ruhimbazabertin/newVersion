@@ -1,4 +1,4 @@
-Sliding: false
+
 
 <template>
   <div>
@@ -18,40 +18,29 @@ Sliding: false
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="https://picsum.photos/1024/480/?image=52"
+        caption=""
+        text="Green Earth is the best choice."
+        img-src="/static/plant4.png"
       ></b-carousel-slide>
 
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-        <h1>Hello world!</h1>
+      <b-carousel-slide img-src="/static/plant2.png">
+        <h1>Future Green!</h1>
       </b-carousel-slide>
+      <b-carousel-slide img-src="/static/plant3.png"></b-carousel-slide>
 
-      <!-- Slides with image only -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide>
         <template v-slot:img>
           <img
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="https://picsum.photos/1024/480/?image=55"
+            src="/static/plant5.png"
             alt="image slot"
           >
         </template>
       </b-carousel-slide>
 
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
     </b-carousel>
 <hr>
   </div>
@@ -76,5 +65,7 @@ Sliding: false
   }
 </script>
 <style  scoped>
-
+#carousel-1{
+    width:100;
+}
 </style>
