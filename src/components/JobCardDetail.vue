@@ -29,16 +29,26 @@
            </b-card-footer>
   </b-card>
 </div>
+<b-row class="subscribe">
+<app-subscribe></app-subscribe>
+</b-row>
 </center>
 </template>
 <script>
+import Suscribe from '../components/Subscribe'
 export default {
     
+    components: {
+        "app-subscribe": Suscribe
+    }
 }
 </script>
 <style scoped>
 .jobcard-detail{
     margin-top: 40px;
     margin-bottom: 50px;
+}
+.subscribe{
+    margin-right: 1px;
 }
 </style>

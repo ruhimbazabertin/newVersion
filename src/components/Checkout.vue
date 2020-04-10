@@ -52,14 +52,23 @@
         </form>
     </div>
     </section>
+    <b-row class="subscribe">
+    <app-subscribe></app-subscribe>
+</b-row>
       </main>
 </template>
 <script>
+import Subscribe from '../components/Subscribe'
 export default {
-    
+  components: {
+        "app-subscribe": Subscribe
+    }  
 }
 </script>
 <style scoped>
+.subscribe{
+    margin-right: 1px;
+}
 .payment-form{
 	padding-bottom: 50px;
 	font-family: 'Montserrat', sans-serif;

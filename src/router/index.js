@@ -7,6 +7,7 @@ import SignIn from '../components/SignIn'
 import Registration from '../components/Registration'
 import JobCardDetail from '../components/JobCardDetail'
 import Dashboard from '../Board/Dashboard'
+import Product from '../views/product'
 
 Vue.use(Router)
 
@@ -32,7 +33,9 @@ export default new Router({
     },
     {
       path: '/Dashboard', component: Dashboard
+    },
+    {
+      path: '/product', component: Product
     }
-    
   ]
 })
