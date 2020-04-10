@@ -2,9 +2,9 @@
   <div class="top-header">
   			<div class="md-4">
 				<ul id="top-header-menu" class="top-nav clearfix d-flex justify-content-between align-items-center m-0 p-0">
-          <span class="top-text ml-3"> Our free courses are downloaded over 3 MILLION times. Get them now!
+          <span class="top-text ml-3"> The best services our pride. Get them now!
           </span>
-				<li class="ml-auto"><a href="#">Call Us On: 07888</a><a href="#" class="pl-5 mr-4">Beautifying
+				<li class="ml-auto"><a href="#">Call Us On: 0786960926</a><a href="#" class="pl-5 mr-4">Social Media place
           <facebook :url="url" scale="3"></facebook>
     <twitter :url="url" title="Check me on Github" scale="3"></twitter>
     <linkedin :url="url" scale="3"></linkedin>
@@ -19,13 +19,13 @@
 				</ul>
 			</div>
        <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">ABNB-RWANDA</b-navbar-brand>
+    <b-navbar-brand href="#">METAMETA-RWANDA</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item to="/Dashboarded">Blog</b-nav-item>
+        <b-nav-item to="/product">Blog</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->

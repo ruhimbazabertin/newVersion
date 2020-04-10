@@ -58,11 +58,19 @@
             </tr>
             </tfoot>
         </table>
+        <b-row>
+            <app-subscribe></app-subscribe>
+        </b-row>
+
     </div>
 
 </template>
 <script>
+import Subscribe from '../components/Subscribe'
 export default {
     
+    components: {
+        "app-subscribe": Subscribe
+    }
 }
 </script>>
